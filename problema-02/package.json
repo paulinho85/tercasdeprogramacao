@@ -1,0 +1,17 @@
+{
+  "name": "problema-02",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha tests/*/*.test.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "mocha": "^10.7.0"
+  },
+  "dependencies": {
+    "problema-02": "file:"
+  }
+}
