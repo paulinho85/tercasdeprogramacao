@@ -1,4 +1,4 @@
-function verificaNarcisista(numero) {
+/* function verificaNarcisista(numero) {
     if (numero < 0) {
         return 'não narcisista';        
     }
@@ -21,6 +21,12 @@ function verificaNarcisista(numero) {
 
     return 'não narcisista';        
         
+}
+ */
+
+//versão refatorado da função acima
+const verificaNarcisista = numero => {
+    return (numero.toString().split('').reduce((acc, it, ind, vt) => Math.pow(it, vt.length) + acc, 0) == numero) ? 'narcisista' : 'não narcisista'
 }
 
 module.exports = {
