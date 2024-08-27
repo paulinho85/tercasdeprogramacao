@@ -1,7 +1,9 @@
 function calculaIdadePets(quantidadeDeAnos) {
+    if (quantidadeDeAnos <= 0) {
+        return {};        
+    }
     
-    switch (quantidadeDeAnos) {
-        case 0: return {};
+    switch (quantidadeDeAnos) {        
         case 1: return {
             cachorro: 15,
             gato: 15
